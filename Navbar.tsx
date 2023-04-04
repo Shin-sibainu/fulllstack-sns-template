@@ -5,17 +5,10 @@
     </h1>
     <nav>
       <ul className="flex space-x-4">
-        {user ? (
-          <>
-            <Link href="/">ホーム</Link>
-            <button onClick={logout}>ログアウト</button>
-          </>
-        ) : (
-          <>
-            <Link href="/login">ログイン</Link>
-            <Link href="/signup">サインアップ</Link>
-          </>
-        )}
+        <>
+          <Link href="/login">ログイン</Link>
+          <Link href="/signup">サインアップ</Link>
+        </>
       </ul>
     </nav>
   </div>
